@@ -1,0 +1,13 @@
+
+
+.message {
+  width: 100px;
+ 
+  background-color: aquamarine;
+  position: absolute;
+  right: 20px;
+  top: 20%;
+  z-index: 10;
+
+  transition: all ;
+}

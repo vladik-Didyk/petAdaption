@@ -1,0 +1,35 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete{
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.SignInPage , .LogInPage{
+  position: relative;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding:20px;
+}
+

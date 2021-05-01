@@ -1,22 +1,21 @@
 {
-  "name": "pet_adoption_full_stack_project",
+  "name": "client1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "axios": "^0.21.1",
-    "bootstrap": "^4.6.0",
-    "localforage": "^1.9.0",
-    "materialize-css": "^1.0.0",
-    "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-modal": "^3.13.1",
-    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "axios": "^0.21.1",
+    "node-sass": "^5.0.0",
+    "bootstrap": "^4.6.0",
+    "localforage": "^1.9.0",
+    "react-router-dom": "^5.2.0",
+    "react-modal": "^3.13.1"
   },
   "scripts": {
     "start": "react-scripts start",

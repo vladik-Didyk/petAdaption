@@ -22,7 +22,9 @@ const petData = {
 
   
 }
-
+const Picture_container_File = {
+  name : ''
+}
 const new_obj = {
   name : 'alex',
   last_name: 'Shalom',
@@ -32,19 +34,20 @@ const new_obj = {
 
 
 const PetPageCreation = props => {
-
+  
   const [petConfiguration, setPetConfiguration] = useState(petData)
   const [serverRes, setServerRes] = useState(null)
-
+  
   const handlerChange = ({ target }) => {
+    console.log(petConfiguration)
     setPetConfiguration({ ...petConfiguration, [target.name]: target.value })
   }
   const handlerChangeToNumber = ({ target }) => {
     setPetConfiguration({ ...petConfiguration, [target.name]: +target.value })
   }
 
-  const onClickAdoptionStatus = ({ target }) => {
 
+  const onClickAdoptionStatus = ({ target }) => {
     setPetConfiguration({
       ...petConfiguration, Adoption_Status: {
         ...petConfiguration.Adoption_Status,
@@ -65,7 +68,7 @@ console.log(event.target.files[0]);
 
     setPetConfiguration({
       ...petConfiguration,
-      [event.target.name]: event.target.files[0].name
+      [event.target.name]: event.target.files[0]
     })
   }
   
@@ -205,6 +208,7 @@ console.log(event.target.files[0]);
         </div>
       </div>
     </div>
+    <img src=""></img>
 
     <div className="input-group mb-3">
       <div className="input-group-prepend">

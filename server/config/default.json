@@ -2,7 +2,8 @@
 
     "port" : 5000,
     "jwtSecret" : "any string ",
-    "mongoURL" : "mongodb+srv://Pet_Adoption:Pet_Adoption@cluster0.vuq8d.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURL" : "mongodb+srv://Pet_Adoption:Pet_Adoption@cluster0.vuq8d.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "mongoURL1" : "mongodb+srv://users:users@pet-adoption.lfbuo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 
 }

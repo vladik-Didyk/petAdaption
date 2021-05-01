@@ -9,7 +9,7 @@ app.use(express.json(
 ))
 
 app.use('/api/auth', require('./routes/auth.routes'))
-//app.use('/api/created', require('./routes/pets.routes'))
+app.use('/api/created', require('./routes/pets.routes'))
 
 
 
@@ -22,17 +22,15 @@ async function start (){
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useCreateIndex: true
-        }
-            
-            )
+        })
             
            await console.log('try');
         app.listen(PORT, ()=>{
-            console.log('new User');
+           console.log("http://localhost/"+PORT);
         })
     } catch {
         console.log('s');
-        process.exit(1)
+        process.exit(9)
     }
 }
 start()

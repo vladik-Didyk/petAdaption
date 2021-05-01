@@ -7,7 +7,7 @@ const schema = new Schema({
     isAdoption: { type : Boolean,  required: true, unique: false},
     isReturned: {type: Boolean,  required: true, unique: false},
   },
-  Picture: {any: Object},
+  Picture: {any: Types.Buffer},
   Height: {type: Number, required: false, unique: false}, 
   Weight: {type : Number, required: false, unique: false}, 
   Color: {type : String, required: false, unique: false}, 

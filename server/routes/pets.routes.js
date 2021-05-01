@@ -1,7 +1,7 @@
 const { Router } = require('express')
 const router = Router()
 const Pet = require('../modules/Pet')
-// const { check, validationResult } = require('express-validator')
+const { check, validationResult } = require('express-validator')
 
 
 
@@ -13,21 +13,20 @@ try{
   const newPet = await Pet.findOne({reqPet})
   if(newPet) return res.status(400).json({message : 'This pet is already exists'})
 
-  if(!reqPet.Type) return res.status(400).json({message : 'You did not mention the type '})
-  //!
-  //!
-  //!
-  //!
+console.log(reqPet.Picture);
+console.log(reqPet);
+  //if(!reqPet.Type) return res.status(400).json({message : 'You did not mention the type '})
+
   const pet = new Pet(reqPet)
 
-  // console.log(pet);
+//  console.log(pet);
 
  // await pet.save()
 
   res.status(200).json({message: ' Created'})
 
 } catch(e){
-
+  res.status(505).json({ message: 'Errors' })
 }
   
 //   if (!checkErrorValidation.isEmpty()) return res.status(888).json({

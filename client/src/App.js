@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 import localforage from 'localforage'
 import LocalUserContext from './components/Context/LocalUserContext'
 import axios from 'axios';
-import PetPageCreation from '../src/components/PetPageCreation/PetPageCreation'
+import PetPageCreation from './components/PetPageCreation/PetPageCreation'
 
 
 const modalIsOpen = {
